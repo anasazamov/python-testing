@@ -1,18 +1,12 @@
-def main():
-    return "Hello World."
+from main import addition
+import random
 
 
-def test_main_01():
-    output = main()
+def test_addition():
+    x1 = random.randint(0, 100)
+    x2 = random.randint(0, 100)
 
-    answer = "Hello World."
-    assert output == answer, "wrong answer"
+    output = addition(x1, x2)
 
-
-
-def test_main_02():
-    output = main()
-
-    answer = "Hello World."
-    assert output == answer, "wrong answer"
-
+    answer = x1 + x2
+    assert output == answer, "wrong addition"
