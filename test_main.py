@@ -1,10 +1,9 @@
 from main import addition
-import random
 
 
 def test_addition():
-    x1 = random.randint(0, 100)
-    x2 = random.randint(0, 100)
+    x1 = 3
+    x2 = 5
 
     output = addition(x1, x2)
 
